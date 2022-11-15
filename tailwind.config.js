@@ -5,6 +5,12 @@ module.exports = {
     './components/**/*.{html,js}',
   ],
   theme: {
+     fontSize: {
+      sm: ['12px', '20px'],
+      base: ['16px', '24px'],
+      lg: ['20px', '28px'],
+      xl: ['24px', '32px'],
+    },
     extend: {
       backgroundImage: theme => ({
         'one': "url('../src/img/backg/1.png')",

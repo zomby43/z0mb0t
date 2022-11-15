@@ -1,0 +1,16 @@
+@keyframes rotation {
+	from { transform: rotate(-2deg); }
+	to { transform: rotate(2deg); }
+}
+
+.hotm {
+	animation-name: rotation;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+li {
+  margin: 10px;
+}
