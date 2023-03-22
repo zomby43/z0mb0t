@@ -1,0 +1,186 @@
+@import 'https://fonts.googleapis.com/css?family=Cabin+Sketch';
+body {
+  font-family: 'Cabin Sketch', sans-serif;
+  background: #1D1F20;
+  text-align: center;
+}
+
+.effect {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-height: 800px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url('https://s13.postimg.cc/5n8xqtx9h/2_1.png');
+}
+
+.effect__img {
+  opacity: 0;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.effect__caption {
+  position: absolute;
+  pointer-events: none;
+  top: 45vh;
+  width: 100%;
+  font-size: 10vh;
+  color: #5000aa;
+  text-shadow: 2px 2px white;
+  transition: opacity .2s ease-out;
+  opacity: 1;
+  z-index: 5;
+}
+
+.effect:after,
+.effect:before {
+  content: "";
+  z-index: 3;
+  display: block;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transition: all 0.2s ease-out;
+}
+
+.effect:hover .effect__caption {
+  opacity: 0;
+}
+
+.effect--3d:hover {
+  filter: brightness(90%);
+}
+
+.effect--3d:hover:before {
+  left: -.5vh;
+  filter: brightness(115%) hue-rotate(10deg);
+}
+
+.effect--3d:hover:after {
+  left: .5vh;
+  filter: brightness(115%) hue-rotate(270deg);
+}
+
+.effect--glitch:hover:before {
+  clip: rect(28vh, 100vh, 38vh, 0vh);
+  margin-left: -1vh;
+  margin-top: .1vh;
+  filter: brightness(150%) contrast(2);
+  animation: shake-glitch--1 1.1s ease-in-out infinite;
+}
+
+.effect--glitch:hover:after {
+  clip: rect(78vh, 100vh, 88vh, 0vh);
+  margin-left: 1vh;
+  filter: brightness(150%) contrast(2) hue-rotate(20deg);
+  animation: shake-glitch--2 1.4s ease-in-out infinite;
+}
+
+.effect--vhs:hover:before {
+  margin-top: .2vh;
+  margin-left: .2vh;
+  opacity: .6;
+  filter: brightness(120%);
+  animation: shake-vhs 1.1s ease infinite;
+}
+
+.effect--vhs:hover:after {
+  background-color: black;
+  background-image: linear-gradient(transparent 30%, rgba(189, 51, 188, .2) 50%);
+  background-size: 10px 6px;
+  animation: scroll 2s ease-in-out infinite;
+}
+
+.effect--gb:hover:after {
+  opacity: 1;
+  z-index: 2;
+  filter: contrast(3) brightness(1.5) grayscale(1);
+}
+
+.effect--gb:hover:before {
+  opacity: 1;
+      background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9) 1px, transparent 1px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9) 1px, transparent 1px, transparent 100%);
+  background-size: 7px 7px;
+}
+
+@keyframes shake-glitch--1 {
+  28% {
+    clip: rect(28vh, 100vh, 38vh, 0vh);
+    margin-left: -1vh;
+  }
+  30% {
+    clip: rect(26vh, 100vh, 36vh, 10vh);
+    margin-left: 0.1vh;
+  }
+  32% {
+    clip: rect(28vh, 100vh, 38vh, 0vh);
+    margin-left: -1vh;
+  }
+  34% {
+    clip: rect(26vh, 100vh, 36vh, 10vh);
+    margin-left: 0.1vh;
+  }
+  36% {
+    clip: rect(28vh, 100vh, 38vh, 0vh);
+    margin-left: -1vh;
+  }
+}
+
+@keyframes shake-glitch--2 {
+  68% {
+    clip: rect(78vh, 100vh, 88vh, 0vh);
+    margin-left: 1vh;
+  }
+  70% {
+    clip: rect(56vh, 100vh, 56vh, 10vh);
+    margin-left: 0.1vh;
+  }
+  72% {
+    clip: rect(78vh, 100vh, 88vh, 0vh);
+    margin-left: 1vh;
+  }
+  74% {
+    clip: rect(56vh, 100vh, 56vh, 10vh);
+    margin-left: 0.1vh;
+  }
+  76% {
+    clip: rect(78vh, 100vh, 88vh, 0vh);
+    margin-left: 1vh;
+  }
+}
+
+@keyframes shake-vhs {
+  30% {
+    margin-left: 0;
+  }
+  60% {
+    margin-left: .4vh;
+  }
+}
+
+@keyframes scroll {
+  30% {
+    background-position: top;
+  }
+}
+
+
+
+
+
+
