@@ -13,13 +13,13 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'image-1': "url('./src/img/backg/1.png')",
-        'image-2': "url('./src/img/backg/2.png')",
-        'image-3': "url('./src/img/backg/3.png')",
-        'image-4': "url('./src/img/backg/4.gif')",
-        'image-5': "url('./src/img/backg/5.png')",
-        'image-6': "url('./src/img/backg/6.gif')",
-        'image-7': "url('./src/img/backg/7.png')",
+        'image-1': "url('../src/img/backg/1.png')",
+        'image-2': "url('../src/img/backg/2.png')",
+        'image-3': "url('../src/img/backg/3.png')",
+        'image-4': "url('../src/img/backg/4.gif')",
+        'image-5': "url('../src/img/backg/5.png')",
+        'image-6': "url('../src/img/backg/6.gif')",
+        'image-7': "url('../src/img/backg/7.png')",
       }),
       // Define animation class
       animation: {
