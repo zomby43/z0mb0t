@@ -13,6 +13,9 @@
       "/z0mb0t/src/img/backg/5.png",
       "/z0mb0t/src/img/backg/6.gif",
       "/z0mb0t/src/img/backg/7.png",
+      "/z0mb0t/src/img/backg/8.gif",
+      "/z0mb0t/src/img/backg/9.png",
+      "/z0mb0t/src/img/backg/10.png",
     ];
     return images[getRandomInt(0, images.length - 1)];
   }

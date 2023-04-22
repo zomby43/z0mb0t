@@ -20,6 +20,9 @@ module.exports = {
         'image-5': "url('/z0mb0t/src/img/backg/5.png')",
         'image-6': "url('/z0mb0t/src/img/backg/6.gif')",
         'image-7': "url('/z0mb0t/src/img/backg/7.png')",
+        'image-8': "url('/z0mb0t/src/img/backg/8.gif')",
+        'image-9': "url('/z0mb0t/src/img/backg/9.png')",
+        'image-10': "url('/z0mb0t/src/img/backg/10.png')",
       }),
       // Define animation class
       animation: {
