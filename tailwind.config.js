@@ -19,11 +19,14 @@ module.exports = {
         'image-3': "url('/z0mb0t/src/img/backg/3.png')",
         'image-4': "url('/z0mb0t/src/img/backg/4.gif')",
         'image-5': "url('/z0mb0t/src/img/backg/5.png')",
-        'image-6': "url('/z0mb0t/src/img/backg/6.gif')",
+        'image-6': "url('/z0mb0t/src/img/backg/6.png')",
         'image-7': "url('/z0mb0t/src/img/backg/7.png')",
-        'image-8': "url('/z0mb0t/src/img/backg/8.gif')",
+        'image-8': "url('/z0mb0t/src/img/backg/8.png')",
         'image-9': "url('/z0mb0t/src/img/backg/9.png')",
         'image-10': "url('/z0mb0t/src/img/backg/10.png')",
+        'image-11': "url('/z0mb0t/src/img/backg/11.png')",
+        'image-12': "url('/z0mb0t/src/img/backg/12.png')",
+        'image-13': "url('/z0mb0t/src/img/backg/13.png')",
       }),
       // Define animation class
       animation: {
