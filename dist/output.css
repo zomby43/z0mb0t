@@ -737,6 +737,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -831,6 +835,10 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .w-full {
