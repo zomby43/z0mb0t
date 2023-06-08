@@ -1,8 +1,5 @@
-// Configuración de Firebase que obtuviste al crear la aplicación
-import { initializeApp } from 'firebase/app';
-import { getFirestore, addDoc, collection, serverTimestamp, query, orderBy, onSnapshot } from 'firebase/firestore';
-
-const firebaseConfig = {
+// Configuración de Firebase
+var firebaseConfig = {
   apiKey: "AIzaSyAGGPhMrPl9S9a7dlm_s6bsz1zBTl0pKEs",
   authDomain: "guestbook-fa3d7.firebaseapp.com",
   databaseURL: "https://guestbook-fa3d7-default-rtdb.firebaseio.com",
@@ -14,8 +11,9 @@ const firebaseConfig = {
 };
 
 // Inicializa Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore();
+var app = firebase.initializeApp(firebaseConfig);
+var analytics = firebase.analytics(app);
+var db = firebase.firestore(app);
 
 // Referencia a la forma en HTML
 var form = document.getElementById("guestbook-form");
@@ -26,10 +24,10 @@ form.addEventListener("submit", function(e) {
   var name = document.getElementById("name").value;
   var comment = document.getElementById("comment").value;
 
-  addDoc(collection(db, "comments"), {
+  db.collection("comments").add({
     name: name,
     comment: comment,
-    timestamp: serverTimestamp()
+    timestamp: firebase.firestore.FieldValue.serverTimestamp()
   })
   .then(function() {
     form.reset();
@@ -40,9 +38,7 @@ form.addEventListener("submit", function(e) {
 });
 
 // Escucha los cambios en la base de datos
-const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
-
-onSnapshot(q, (snapshot) => {
+db.collection("comments").orderBy("timestamp", "desc").onSnapshot((snapshot) => {
   var commentsSection = document.getElementById("comments-section");
 
   // Limpia la sección de comentarios
@@ -53,5 +49,6 @@ onSnapshot(q, (snapshot) => {
     commentsSection.innerHTML += "<p><strong>" + comment.name + "</strong>: " + comment.comment + "</p>";
   });
 });
+
 
 
