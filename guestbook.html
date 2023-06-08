@@ -100,18 +100,35 @@
 
                       <div>
 
-      <form id="guestbook-form">
-        <input type="text" id="name" placeholder="Tu nombre">
-        <input type="text" id="comment" placeholder="Tu comentario">
-        <button class="text-black dark:text-white" type="submit">Enviar</button>
-      </form>
+                          <div class="container modal-dialog mx-5 outer-border">
+  <div class="title-bar">
+  </div>
+  <div class="details-bar">
+    <a href="index.html"><span>Ir a Inicio</span></a>
+  </div>
+  <div class="window-pane">
+        <form id="guestbook-form" class="flex flex-col space-y-3">
+        <input type="text" id="name" placeholder="Tu nombre" class="border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
+        <input type="text" id="comment" placeholder="Tu comentario" class="border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
+        <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
                           <br>
                           <hr>
                           <br>
+<div class="container modal-dialog mx-5 outer-border">
+  <div class="inner-border center">
+    <div class="modal-contents">
+      <h1 class="modal-text">Comentarios</h1>
+      <div style="padding-left: 20px;">
+        <div class="text-left text-sm text-black" id="comments-section">
+      </div>
     </div>
-    <div class="text-left text-sm text-black dark:text-white" id="comments-section">
-      <!-- Los comentarios se agregarán aquí -->
-    </div>
+  </div>
+</div>
+</div>
+
 
 
                 </div>
