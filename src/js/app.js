@@ -24,6 +24,18 @@ form.addEventListener("submit", function(e) {
   var name = document.getElementById("name").value;
   var comment = document.getElementById("comment").value;
 
+  // Validar longitud del nombre
+  if (name.length > 20) {
+    alert('El nombre no puede tener más de 20 caracteres.');
+    return;
+  }
+
+  // Validar longitud del comentario
+  if (comment.length > 200) {
+    alert('El comentario no puede tener más de 200 caracteres.');
+    return;
+  }
+
   db.collection("comments").add({
     name: name,
     comment: comment,
@@ -49,6 +61,7 @@ db.collection("comments").orderBy("timestamp", "desc").onSnapshot((snapshot) => 
     commentsSection.innerHTML += "<p><strong>" + comment.name + "</strong>: " + comment.comment + "</p>";
   });
 });
+
 
 
 
