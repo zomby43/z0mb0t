@@ -14,9 +14,13 @@
     <script src="./src/js/backg.js"></script>
     <script src="./src/js/random-bg.js"></script>
     <script src="./src/js/darkModeToggle.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
 </head>
 <body onload="changeText()">
+
+
 
 <div class="random-bg bg-accent-dark bg-pattern animate-ltr-linear-infinite">
 
@@ -43,6 +47,8 @@
     <div class="separator">
 </div>
 
+
+
 <!--  Nav  -->
 
     <div class="bg-gradient-to-t from-neutral-300 to-neutral-100 container px-10 ">
@@ -68,7 +74,9 @@
             </li>
         </ul>
 <!--Main-->
+            <script src="./src/js/masonry.js"></script>
 <div class="standard-dialog center scale-down my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+
     <main class="bg-white dark:bg-neutral-900 dark:to-neutral-900 standard-dialog md:w-2/3 lg:w-3/4 px-5 py-40 ">
         <h2 class="text-center text-black dark:text-white">~ Bievenido a Zombot ~
         </h2>
@@ -86,7 +94,37 @@
             <div class="bg-white dark:bg-neutral-900 standard-dialog center scale-down flex flex-col items-center justify-center">
                 <div class="bg-white dark:bg-neutral-800 standard-dialog center scale-down p-10 w-full">
 
+                    <div class="grid grid-cols-3 gap-0 auto-rows-max">
+                          <a href="src/img/art/2022_01.png" target="_blank" class="flex items-center justify-center">
+                            <img id="img1" class="w-full w-auto  object-cover" src="src/img/art/2022_01.png">
+                          </a>
+                        <a href="src/img/art/2022_03.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/2022_03.png" id="img2">
+                            </a>
+                            <a href="src/img/art/2022_05.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/2022_05.png" id="img3">
+                               </a>
+                            <a href="src/img/art/2022_07.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/2022_07.png" id="img4">
+                              </a>
+                            <a href="src/img/art/2023_01_small.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/2023_01_small.png" id="img5">
+                               </a>
+                            <a href="src/img/art/2023_02.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full bject-cover" src="src/img/art/2023_02.png" id="img6">
+                               </a>
+                            <a href="src/img/art/2023_05.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/2023_05.png" id="img7">
+                                </a>
+                            <a href="src/img/art/Gl1.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/Gl1.png" id="img8">
+                                </a>
+                            <a href="src/img/art/2023_03.png" target="_blank" class="flex items-center justify-center">
+                        <img class="w-full object-cover" src="src/img/art/2023_03.png" id="img9">
+                                </a>
+  <!-- Add as many images as you like -->
 
+</div>
 
                 </div>
             </div>
@@ -95,6 +133,7 @@
 
 <!--Sidebar-->
         <aside class="bg-white text-left dark:bg-neutral-900 standard-dialog md:w-1/3 lg:w-1/4 px-5 py-40">
+
             <img class="h-auto mx-auto rounded-lg" src="src/img/SIDE/avat1.gif">
                 <br>
                 <p class="align-text-top text-black dark:text-white">
@@ -124,8 +163,8 @@
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/delete-twitter.gif">
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/desp-anim.gif">
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/beyes.gif">
+
         </div>
-                </p>
         </aside>
     </div>
 <!--Footer-->
@@ -140,5 +179,10 @@ desde que el contador se reinició. (21 de abril, 2023)
         <img class="mx-auto" src="src/img/gif/ie_logo.gif">
         <img class="mx-auto" src="src/img/gif/monkeycounter.gif">
     </footer>
+
+
+
+
 </body>
+
 </html>
