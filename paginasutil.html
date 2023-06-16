@@ -35,12 +35,13 @@
 
 <div class="random-bg bg-accent-dark bg-pattern animate-ltr-linear-infinite">
 
-    <!-- Dark mode toggle button -->
-    <button id="darkModeToggle" class="absolute top-2 right-2 p-2">
-        <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
-        <img src="./src/img/buttons/dark.png">
-        </div>
+<!-- Dark mode toggle button -->
+<button id="darkModeToggle" class="absolute top-2 right-2 p-2">
+    <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
+        <img id="darkModeIcon" src="src/img/buttons/dark.png">
+    </div>
 </button>
+
 
 <div class="container flex mx-auto">
     <div class="bg-gradient-to-t from-neutral-500 to-neutral-100 dark:bg-gradient-to-t dark:from-neutral-700 dark:to-neutral-900 mt-10" style="border-style: solid; border-width: thin">
@@ -88,30 +89,34 @@
 <div class="standard-dialog center scale-down my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 
     <main class="bg-white dark:bg-neutral-900 dark:to-neutral-900 standard-dialog md:w-2/3 lg:w-3/4 px-5 py-40 ">
-        <h2 class="text-center text-black dark:text-white">~ Paginas Utiles ~
-        </h2>
 
+
+        <div class="flex justify-center items-center">
+                <img src="src/img/gif/torchPur.gif">
+                <div class="flex place-content-center mx-4">
+                    <img class="dark:invert" src="src/img/blog/paginasutil.gif" alt="Paginas Utiles">
+                </div>
+            <img src="src/img/gif/torchPur.gif">
+        </div>
         <div class="container mx-auto p-8">
             <div class="bg-white dark:bg-neutral-900 standard-dialog center scale-down flex flex-col items-center justify-center">
                 <div class="bg-white dark:bg-neutral-800 standard-dialog center scale-down p-10 w-full">
                     <div class="grid grid-cols-3 gap-2 auto-rows-max">
-
                     </div>
-
                       <div>
+                          <div class="container modal-dialog mx-5 outer-border dark:bg-neutral-900">
 
-                          <div class="container modal-dialog mx-5 outer-border">
-
-  <div class="title-bar">
+  <div class="title-bar dark:bg-neutral-900">
   </div>
-                                <div class="details-bar">
-    <a href="index.html"><span class="text-black">Ir a Inicio</span></a>
-  </div>
-    <div class="grid grid-cols-4 gap-4">
-        <div class="col-span-4 p-4 text-center">
-            <h1 class="text-4xl">Algunos sitios web que considero utiles o entretenidos/interesantes para visitar.</h1>
-            <img src="src/img/gif/anibline2a.gif" class="mx-auto">
-        </div>
+                                <div class="details-bar dark:bg-neutral-900">
+                                    <a href="index.html"><span class="text-black dark:text-white">Ir a Inicio</span></a>
+                                </div>
+                                   <div class="grid grid-cols-4 gap-4 dark:bg-neutral-900">
+                                    <div class="col-span-4 p-4 text-center">
+                                        <h1 class="col-auto dark:text-white overflow-auto word-wrap">Algunos sitios web que considero utiles o entretenidos/interesantes para visitar.</h1>
+                                        <img src="src/img/gif/anibline2a.gif" class="mx-auto">
+                                    </div>
+                                </div>
         <div class="col-span-4 text-center">
             <ul>
                 <li><a href="https://gifcities.org/" class="text-blue-500 hover:underline"><img src="src/img/gif/arrowbip.gif" class="inline-block">Gifcities - Buscador de Gifs 90's estilo Geocities</a></li>
@@ -127,6 +132,8 @@
                 <li><a href="https://noclip.website/" class="text-blue-500 hover:underline"><img src="src/img/gif/arrowbip.gif" class="inline-block">Noclip - Museo de niveles de videojuegos</a></li>
                 <li><a href="https://someonewhocares.org/hosts/" class="text-blue-500 hover:underline"><img src="src/img/gif/arrowbip.gif" class="inline-block">how to make the internet not suck (as much)</a></li>
             </ul>
+            <br>
+            <img class="mx-auto" src="src/img/gif/under_construction.gif">
             <br>
         </div>
     </div>

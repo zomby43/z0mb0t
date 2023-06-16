@@ -35,12 +35,13 @@
 
 <div class="random-bg bg-accent-dark bg-pattern animate-ltr-linear-infinite">
 
-    <!-- Dark mode toggle button -->
-    <button id="darkModeToggle" class="absolute top-2 right-2 p-2">
-        <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
-        <img src="./src/img/buttons/dark.png">
-        </div>
+<!-- Dark mode toggle button -->
+<button id="darkModeToggle" class="absolute top-2 right-2 p-2">
+    <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
+        <img id="darkModeIcon" src="src/img/buttons/dark.png">
+    </div>
 </button>
+
 
 <div class="container flex mx-auto">
     <div class="bg-gradient-to-t from-neutral-500 to-neutral-100 dark:bg-gradient-to-t dark:from-neutral-700 dark:to-neutral-900 mt-10" style="border-style: solid; border-width: thin">
@@ -87,10 +88,17 @@
 <!--Main-->
 <div class="standard-dialog center scale-down my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 
-    <main class="bg-white standard-dialog md:w-2/3 lg:w-3/4 px-5 py-40 ">
-        <h2 class="text-center text-black">~ Guestbook ~
-        </h2>
-        <div class="flex flex-wrap justify-center"><img src="src/img/gif/viewbook.gif" class="flex flex-wrap justify-center" alt="Guestbook"></div>
+    <main class="bg-white dark:bg-neutral-900 standard-dialog md:w-2/3 lg:w-3/4 px-5 py-40 ">
+        <div class="flex justify-center items-center">
+    <img src="src/img/gif/torchPur.gif">
+    <div class="flex place-content-center mx-4">
+        <img src="src/img/blog/guestbook.gif" alt="Guestbook">
+    </div>
+    <img src="src/img/gif/torchPur.gif">
+</div>
+
+        <div class="flex place-content-center"><img src="src/img/gif/viewbook.gif" class="flex flex-wrap justify-center" alt="Guestbook"></div>
+        <p class="text-black dark:text-white">Deja tus comentarios, dudas, reclamos, spam, ideas, criticas... aqui.</p>
         <div class="container mx-auto p-8">
             <div class="bg-white dark:bg-neutral-900 standard-dialog center scale-down flex flex-col items-center justify-center">
                 <div class="bg-white dark:bg-neutral-800 standard-dialog center scale-down p-10 w-full">
@@ -106,23 +114,33 @@
   <div class="details-bar">
     <a href="index.html"><span class="text-black dark:text-white">Ir a Inicio</span></a>
   </div>
-  <div class="window-pane">
+  <div class="window-pane dark:bg-neutral-900">
         <form id="guestbook-form" class="flex flex-col space-y-3">
-        <input type="text" id="name" placeholder="Tu nombre" class="border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
-        <input type="text" id="comment" placeholder="Tu comentario" class="border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
-        <button class="btn" type="submit">Enviar</button>
+        <input type="text" id="name" placeholder="Tu nombre" class="bg-white dark:bg-black border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
+            <br>
+        <input type="text" id="comment" placeholder="Tu comentario" class="bg-white dark:bg-black border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
+            <br>
+        <button class="btn bg-white dark:bg-black dark:border-white dark:text-white" type="submit">Enviar</button>
     </form>
   </div>
 </div>
                           <br>
                           <hr>
                           <br>
-<div class="container modal-dialog mx-5 outer-border">
+<div class="container modal-dialog mx-5 outer-border dark:bg-neutral-900">
   <div class="inner-border center">
     <div class="modal-contents">
-      <h1 class="modal-text">Comentarios</h1>
+        <div class="flex justify-center items-center">
+            <img src="src/img/gif/torchPur.gif">
+            <div class="flex place-content-center mx-4">
+                <img src="src/img/gif/Comments_2.gif" alt="Comments">
+            </div>
+            <img src="src/img/gif/torchPur.gif">
+        </div>
+
+
       <div style="padding-left: 20px;">
-        <div class="text-left text-sm text-black" id="comments-section">
+        <div class="text-left text-sm text-black dark:text-white" id="comments-section">
       </div>
     </div>
   </div>

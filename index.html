@@ -24,12 +24,13 @@
 
 <div class="random-bg bg-accent-dark bg-pattern animate-ltr-linear-infinite">
 
-    <!-- Dark mode toggle button -->
-    <button id="darkModeToggle" class="absolute top-2 right-2 p-2">
-        <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
-        <img src="./src/img/buttons/dark.png">
-        </div>
+<!-- Dark mode toggle button -->
+<button id="darkModeToggle" class="absolute top-2 right-2 p-2">
+    <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
+        <img id="darkModeIcon" src="src/img/buttons/dark.png">
+    </div>
 </button>
+
 
 <div class="container flex mx-auto">
     <div class="bg-gradient-to-t from-neutral-500 to-neutral-100 dark:bg-gradient-to-t dark:from-neutral-700 dark:to-neutral-900 mt-10" style="border-style: solid; border-width: thin">
@@ -77,8 +78,16 @@
 <div class="standard-dialog center scale-down my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 
     <main class="bg-white dark:bg-neutral-900 dark:to-neutral-900 standard-dialog md:w-2/3 lg:w-3/4 px-5 py-40 ">
-        <h2 class="text-center text-black dark:text-white">~ Bievenido a Zombot ~
-        </h2>
+
+                <div class="flex justify-center items-center">
+                <img src="src/img/gif/torchPur.gif">
+                <div class="flex place-content-center mx-4">
+                    <img src="src/img/gif/welcome_to_my_website.gif" alt="Paginas Utiles">
+                </div>
+            <img src="src/img/gif/torchPur.gif">
+        </div>
+
+
         <div class="flex place-content-center">
             <img src="src/img/gif/cute_036.gif" alt="Cute">
         </div>
@@ -89,6 +98,9 @@
         <br>
         <p class="text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit ipsum laboriosam magni modi omnis quasi rem soluta. Ab eos fugit laudantium necessitatibus odit officiis quisquam quod sequi voluptatibus. Ratione!
         </p>
+        <br>
+        <img class="mx-auto dark:invert" src="src/img/gif/notebar.gif">
+        <br>
         <div class="container mx-auto p-8">
             <div class="bg-white dark:bg-neutral-900 standard-dialog center scale-down flex flex-col items-center justify-center">
                 <div class="bg-white dark:bg-neutral-800 standard-dialog center scale-down p-10 w-full">
@@ -241,10 +253,5 @@ desde que el contador se reinició. (21 de abril, 2023)
   </div>
         <br>
     </footer>
-
-
-
-
 </body>
-
 </html>
