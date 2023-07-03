@@ -1,4 +1,4 @@
-var textArray = ["bievenido", "welcome", "أهلا بك", "환영", "ようこそ", "добро пожаловать", "välkommen",
+var textArray = ["bienvenido", "welcome", "أهلا بك", "환영", "ようこそ", "добро пожаловать", "välkommen",
     "bienvenue", "bem-vinda", "欢迎", "chào mừng"]; // Array
 var currentTextIndex = 0; // initial index
 

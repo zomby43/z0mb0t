@@ -1,6 +1,6 @@
 @keyframes rotation {
-	from { transform: rotate(-2deg); }
-	to { transform: rotate(2deg); }
+	from { transform: rotate(-1deg); }
+	to { transform: rotate(1deg); }
 }
 
 .hotm {
