@@ -26,8 +26,8 @@
 
 <!-- Dark mode toggle button -->
 <button id="darkModeToggle" class="absolute top-2 right-2 p-2">
-    <div class="bg-black text-white rounded p-2 pr-3 flex items-center">
-        <img id="darkModeIcon" src="src/img/buttons/dark.png">
+    <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
+        <img id="darkModeIcon" src="src/img/buttons/moon-cycle.gif">
     </div>
 </button>
 
@@ -101,8 +101,7 @@
         <div class="flex place-content-center"><img src="src/img/gif/viewbook.gif" class="flex flex-wrap justify-center" alt="Guestbook"></div>
         <p class="text-black dark:text-white">Deja tus comentarios, dudas, reclamos, spam, ideas, criticas... aqui.</p>
         <div class="container mx-auto p-8">
-            <div class="bg-white dark:bg-neutral-900 standard-dialog center scale-down flex flex-col items-center justify-center">
-                <div class="bg-white dark:bg-neutral-800 standard-dialog center scale-down p-10 w-full">
+
                     <div class="grid grid-cols-3 gap-2 auto-rows-max ">
 
                     </div>
@@ -116,42 +115,13 @@
     <a href="index.html"><span class="text-black dark:text-white">Ir a Inicio</span></a>
   </div>
   <div class="window-pane dark:bg-neutral-900">
-        <form id="guestbook-form" class="flex flex-col space-y-3">
-        <input type="text" id="name" placeholder="Tu nombre" class="bg-white dark:bg-black border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
-            <br>
-        <input type="text" id="comment" placeholder="Tu comentario" class="bg-white dark:bg-black border-2 border-gray-200 p-2 focus:outline-none focus:border-gray-600 transition-colors duration-200">
-            <br>
-        <button class="btn bg-white dark:bg-black dark:border-white dark:text-white" type="submit">Enviar</button>
-    </form>
-  </div>
+    <iframe class="mx-auto border-2 border-red-600" src="http://z0mb0t.123Guestbook.com/" width="600" height="600"></iframe>
+
 </div>
-                          <br>
-                          <hr>
-                          <br>
-<div class="container modal-dialog mx-5 outer-border dark:bg-neutral-900">
-  <div class="inner-border center">
-    <div class="modal-contents">
-        <div class="flex justify-center items-center">
-            <img src="src/img/gif/torchPur.gif">
-            <div class="flex place-content-center mx-4">
-                <img src="src/img/gif/Comments_2.gif" alt="Comments">
-            </div>
-            <img src="src/img/gif/torchPur.gif">
+</div>
+                      </div>
+
         </div>
-
-
-      <div style="padding-left: 20px;">
-        <div class="text-left text-sm text-black dark:text-white" id="comments-section">
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-                </div>
-            </div>
     </main>
 
 <!--Sidebar-->
