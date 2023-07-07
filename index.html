@@ -14,6 +14,7 @@
     <script src="./src/js/backg.js"></script>
     <script src="./src/js/random-bg.js"></script>
     <script src="./src/js/darkModeToggle.js"></script>
+    <script src="./src/js/language.js"></script>
 
 
 
@@ -24,12 +25,26 @@
 
 <div class="random-bg bg-accent-dark bg-pattern animate-ltr-linear-infinite">
 
-<!-- Dark mode toggle button -->
-<button id="darkModeToggle" class="absolute top-2 right-2 p-2">
-    <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
-        <img id="darkModeIcon" src="src/img/buttons/moon-cycle.gif">
-    </div>
-</button>
+<!-- Wrapper for buttons -->
+<div class="absolute top-2 right-2 flex flex-col">
+
+    <!-- Dark mode toggle button -->
+    <button id="darkModeToggle" class="p-2 mb-2">
+        <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
+            <img id="darkModeIcon" src="src/img/buttons/moon-cycle.gif">
+        </div>
+    </button>
+
+    <!-- Language change button -->
+    <button id="changeLanguage" class="p-2">
+        <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
+            Change Language
+        </div>
+    </button>
+
+</div>
+
+
 
 
 <div class="container flex mx-auto">
@@ -76,13 +91,13 @@
             <li class="flex items-center justify-center text-center border-2 rounded border-black">
                 <a class="flex flex-col items-center justify-center text-red-600 text-sm hover:text-blue-800 m-2 w-24 h-24" href="paginasutil.html">
                     <img class="mx-auto" src="./src/img/buttons/spinstar.gif" width="50" height="50">
-                    <span style="text-shadow: 1px 1px black">Paginas Utiles</span>
+                    <span id="textElement2" style="text-shadow: 1px 1px black">Paginas Utiles</span>
                 </a>
             </li>
             <li class="flex items-center justify-center text-center border-2 rounded border-black">
                 <a class="flex flex-col items-center justify-center text-red-600 text-sm hover:text-blue-800 m-2 w-24 h-24" href="galeria.html">
                     <img class="mx-auto" src="./src/img/buttons/galeria.gif" width="50" height="50">
-                    <span style="text-shadow: 1px 1px black">Galeria</span>
+                    <span id="textElement3" style="text-shadow: 1px 1px black">Galeria</span>
                 </a>
             </li>
         </ul>
@@ -104,7 +119,7 @@
             <img src="src/img/gif/cute_036.gif" alt="Cute">
         </div>
         <br>
-        <p class="text-black dark:text-white">Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre.</p>
+        <p id="textElement" class="text-black dark:text-white">Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre.</p>
         <br>
         <hr class="border-gray-300 dark:border-gray-600">
         <br>
@@ -115,14 +130,14 @@
             <div class="container modal-dialog outer-border dark:bg-neutral-900">
                 <div class="title-bar dark:bg-neutral-900"></div>
                                 <div class="details-bar dark:bg-neutral-900">
-                                    <span class="text-black dark:text-white">Que hay de nuevo?</span>
+                                    <span id="textElement4" class="text-black dark:text-white">Que hay de nuevo?</span>
                                 </div>
                                     <br>
                                     <div class="container flex mx-auto place-content-center p-2">
-                                        <p class=" text-black dark:text-white border-dotted border-2 p-6 border-red-600 font-serif italic">02/Julio/2023: Añadi una sección de Galeria al sitio.</p>
+                                        <p id="textElement5" class=" text-black dark:text-white border-dotted border-2 p-6 border-red-600 font-serif italic">02/Julio/2023: Añadi una sección de Galeria al sitio.</p>
                                     </div>
                                     <div class="container flex mx-auto place-content-center p-2">
-                                        <p class=" text-black dark:text-white border-dotted border-2 p-6 border-red-600 font-serif italic">05/Julio/2023: Reemplazé el Guestbook original de Firebase (RIP por alguna razón) por 123Guestbook.com.</p>
+                                        <p id="textElement6" class=" text-black dark:text-white border-dotted border-2 p-6 border-red-600 font-serif italic">05/Julio/2023: Reemplazé el Guestbook original de Firebase (RIP por alguna razón) por 123Guestbook.com.</p>
                                     </div>
                                     <br>
                                 </div>
@@ -136,18 +151,18 @@
                 <br>
                 <p class="align-text-top text-black dark:text-white">
                     <img class="mx-auto dark:invert" src="src/img/SIDE/about.png">
-                    <p1 class="bg-black text-white rounded-md p-2 text-sm">Nombre:</p1>
+                    <p1 id="textElement7" class="bg-black text-white rounded-md p-2 text-sm">Nombre:</p1>
                     <p1 class="text-sm text-black dark:text-white">z0mb0t, zomby</p1>
                     <br>
                     <hr class="border-gray-300 dark:border-gray-600 mt-5">
                     <br>
-                    <p1 class="bg-black text-white rounded-md p-2 text-sm">Actualmente:</p1>
+                    <p1 id="textElement8" class="bg-black text-white rounded-md p-2 text-sm">Actualmente:</p1>
                     <br>
-                    <p1 class="text-sm text-black dark:text-white">Programando... Estudiando... Haciendo musica y glitches... :)</p1>
+                    <p1 id="textElement9" class="text-sm text-black dark:text-white">Programando... Estudiando... Haciendo musica y glitches... :)</p1>
                     <br>
                     <hr class="border-gray-300 dark:border-gray-600 mt-5">
                     <br>
-                    <p1 class="bg-black text-white rounded-md p-2 text-sm">Jugando:</p1>
+                    <p1 id="textElement10" class="bg-black text-white rounded-md p-2 text-sm">Jugando:</p1>
                     <br>
                     <p1 class="text-sm text-black dark:text-white">CS:GO, Trepang2, Vampire Survivors, Katamari, Noita, Fortnite...</p1>
                     <br>
@@ -179,7 +194,7 @@
     </div>
 <!--Footer-->
     <footer class="container mx-auto">
-        <p class="text-sm flex place-content-center">
+        <p id="textElement11" class="text-sm flex place-content-center">
             Eres el visitante número:
 <a href="http://stuff.mit.edu/doc/counter-howto.html"><img
 src="http://stuff.mit.edu/cgi/counter/zombot" alt="several"></a>
@@ -191,7 +206,7 @@ desde que el contador se reinició. (21 de abril, 2023)
         <br>
           <div class="footer-content flex items-center justify-center">
     <img src="src/img/blog/Tailwind.png" alt="Logo de Tailwind CSS" class="mr-2 h-6">
-    <a href="https://tailwindcss.com/"> <span class="text-sm">Sitio hecho con ♥️ y Tailwind CSS</span></a>
+    <a href="https://tailwindcss.com/"> <span id="textElement12" class="text-sm">Sitio hecho con ♥️ y Tailwind CSS</span></a>
   </div>
         <br>
     </footer>

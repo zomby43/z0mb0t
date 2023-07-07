@@ -14,6 +14,7 @@
     <script src="./src/js/backg.js"></script>
     <script src="./src/js/random-bg.js"></script>
     <script src="./src/js/darkModeToggle.js"></script>
+    <script src="./src/js/language.js"></script>
 
 
 
@@ -24,12 +25,24 @@
 
 <div class="random-bg bg-accent-dark bg-pattern animate-ltr-linear-infinite">
 
-<!-- Dark mode toggle button -->
-<button id="darkModeToggle" class="absolute top-2 right-2 p-2">
-    <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
-        <img id="darkModeIcon" src="src/img/buttons/moon-cycle.gif">
-    </div>
-</button>
+<!-- Wrapper for buttons -->
+<div class="absolute top-2 right-2 flex flex-col">
+
+    <!-- Dark mode toggle button -->
+    <button id="darkModeToggle" class="p-2 mb-2">
+        <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
+            <img id="darkModeIcon" src="src/img/buttons/moon-cycle.gif">
+        </div>
+    </button>
+
+    <!-- Language change button -->
+    <button id="changeLanguage" class="p-2">
+        <div class="bg-black text-white rounded p-2 pr-3 flex items-center w-20 h-20">
+            Change Language
+        </div>
+    </button>
+
+</div>
 
 
 <div class="container flex mx-auto">
@@ -76,13 +89,13 @@
             <li class="flex items-center justify-center text-center border-2 rounded border-black">
                 <a class="flex flex-col items-center justify-center text-red-600 text-sm hover:text-blue-800 m-2 w-24 h-24" href="paginasutil.html">
                     <img class="mx-auto" src="./src/img/buttons/spinstar.gif" width="50" height="50">
-                    <span style="text-shadow: 1px 1px black">Paginas Utiles</span>
+                    <span id="textElement2" style="text-shadow: 1px 1px black">Paginas Utiles</span>
                 </a>
             </li>
             <li class="flex items-center justify-center text-center border-2 rounded border-black">
                 <a class="flex flex-col items-center justify-center text-red-600 text-sm hover:text-blue-800 m-2 w-24 h-24" href="galeria.html">
                     <img class="mx-auto" src="./src/img/buttons/galeria.gif" width="50" height="50">
-                    <span style="text-shadow: 1px 1px black">Galeria</span>
+                    <span id="textElement3" style="text-shadow: 1px 1px black">Galeria</span>
                 </a>
             </li>
         </ul>
@@ -93,7 +106,7 @@
         <div class="flex justify-center items-center">
     <img src="src/img/gif/torchPur.gif">
     <div class="flex place-content-center mx-4">
-        <img src="src/img/blog/guestbook.gif" alt="Guestbook">
+        <img class="dark:invert" src="src/img/blog/guestbook.gif" alt="Guestbook">
     </div>
     <img src="src/img/gif/torchPur.gif">
 </div>
@@ -115,7 +128,7 @@
     <a href="index.html"><span class="text-black dark:text-white">Ir a Inicio</span></a>
   </div>
   <div class="window-pane dark:bg-neutral-900">
-    <iframe class="mx-auto border-2 border-red-600" src="https://z0mb0t.123Guestbook.com/" width="600" height="600"></iframe>
+    <iframe class="mx-auto" src="https://z0mb0t.123Guestbook.com/" width="600" height="600"></iframe>
 
 </div>
 </div>
@@ -131,20 +144,20 @@
                 <br>
                 <p class="align-text-top text-black dark:text-white">
                     <img class="mx-auto dark:invert" src="src/img/SIDE/about.png">
-                    <p1 class="bg-black text-white rounded-md p-2 text-sm">Nombre:</p1>
+                    <p1 id="textElement7" class="bg-black text-white rounded-md p-2 text-sm">Nombre:</p1>
                     <p1 class="text-sm text-black dark:text-white">z0mb0t, zomby</p1>
                     <br>
                     <hr class="border-gray-300 dark:border-gray-600 mt-5">
                     <br>
-                    <p1 class="bg-black text-white rounded-md p-2 text-sm">Actualmente:</p1>
+                    <p1 id="textElement8" class="bg-black text-white rounded-md p-2 text-sm">Actualmente:</p1>
                     <br>
-                    <p1 class="text-sm text-black dark:text-white">Programando... Estudiando... Haciendo musica y glitches... :)</p1>
+                    <p1 id="textElement9" class="text-sm text-black dark:text-white">Programando... Estudiando... Haciendo musica y glitches... :)</p1>
                     <br>
                     <hr class="border-gray-300 dark:border-gray-600 mt-5">
                     <br>
-                    <p1 class="bg-black text-white rounded-md p-2 text-sm">Jugando:</p1>
+                    <p1 id="textElement10" class="bg-black text-white rounded-md p-2 text-sm">Jugando:</p1>
                     <br>
-                    <p1 class="text-sm text-black dark:text-white">CS:GO, Doom Eternal, Vampire Survivors, Katamari, Phasmophobia, Fortnite...</p1>
+                    <p1 class="text-sm text-black dark:text-white">CS:GO, Trepang2, Vampire Survivors, Katamari, Noita, Fortnite...</p1>
                     <br>
                     <hr class="border-gray-300 dark:border-gray-600 mt-5">
                     <br>
