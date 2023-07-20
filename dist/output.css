@@ -677,10 +677,6 @@ video {
   right: 0.5rem;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -761,6 +757,10 @@ video {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mt-10 {

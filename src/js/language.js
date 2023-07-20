@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var textElement10 = document.getElementById("textElement10");
     var textElement11 = document.getElementById("textElement11");
     var textElement12 = document.getElementById("textElement12");
+    var textElement13 = document.getElementById("textElement13");
 
     if (textElement.innerHTML === "Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre.") {
       textElement.innerHTML = "Hello! Here you can find some of the music and glitch art I usually do in my free time.";
@@ -77,6 +78,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     else {
         textElement10.innerHTML = "Jugando:";
+    }
+
+    if (textElement13.innerHTML === "19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.") {
+      textElement13.innerHTML = "July 19, 2023: I added a button to change the language of the site and a 3D effect banner.";
+    }
+    else {
+        textElement13.innerHTML = "19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.";
     }
 
     // Spanish version of the text

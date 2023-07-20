@@ -47,6 +47,46 @@ li {
   padding: 10px;
 }
 
+.image3D-effect {
+    perspective: 1000px;
+    width: 900px;
+    height: 250px;
+    overflow: hidden;
+    margin: 50px auto;
+    position: relative;
+}
+
+.image3D-effect img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s;
+    transform: rotateX(0) rotateY(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes circleMove {
+    0% {
+        transform: rotateX(10deg) rotateY(0deg);
+    }
+    25% {
+        transform: rotateX(10deg) rotateY(90deg);
+    }
+    50% {
+        transform: rotateX(10deg) rotateY(180deg);
+    }
+    75% {
+        transform: rotateX(10deg) rotateY(270deg);
+    }
+    100% {
+        transform: rotateX(10deg) rotateY(360deg);
+    }
+}
+
+.image3D-effect img.idle {
+    animation: circleMove 10s infinite;
+}
 
 
 
