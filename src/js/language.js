@@ -1,113 +1,88 @@
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("changeLanguage").addEventListener("click", function() {
-    var textElement = document.getElementById("textElement");
-    var textElement2 = document.getElementById("textElement2");
-    var textElement3 = document.getElementById("textElement3");
-    var textElement4 = document.getElementById("textElement4");
-    var textElement5 = document.getElementById("textElement5");
-    var textElement6 = document.getElementById("textElement6");
-    var textElement7 = document.getElementById("textElement7");
-    var textElement8 = document.getElementById("textElement8");
-    var textElement9 = document.getElementById("textElement9");
-    var textElement10 = document.getElementById("textElement10");
-    var textElement11 = document.getElementById("textElement11");
-    var textElement12 = document.getElementById("textElement12");
-    var textElement13 = document.getElementById("textElement13");
+    var translations = [
+      {
+        id: "textElement",
+        es: "Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre. Por ahora no hay mucho, pero espero que te guste lo que hay, puedes navegar por los botones de arriba para ver más como mi galería o mis redes sociales, o paginas que encuentro utiles o entretenidas. Tambien puedes dejar un mensaje en mi guestbook si quieres, o si tienes alguna sugerencia o comentario puedes contactarme en mis redes sociales :).",
+        en: "Hi! Here you can find some of the music and glitch art I usually make in my free time. For now there is not much, but I hope you like what there is, you can browse the buttons above to see more like my gallery or my social networks, or pages that I find useful or entertaining. You can also leave a message in my guestbook if you want, or if you have any suggestions or comments you can contact me on my social networks :)."
+      },
+      {
+        id: "textElement2",
+        es: "Paginas Utiles",
+        en: "Useful Sites"
+      },
+        {
+        id: "textElement3",
+        es: "Galeria",
+        en: "Gallery"
+        },
+        {
+        id: "textElement4",
+        es: "Que hay de nuevo?",
+        en: "What's new?"
+        },
+        {
+        id: "textElement5",
+        es: "02/Julio/2023: Añadi una sección de Galeria al sitio.",
+        en: "July 2, 2023: I added a Gallery section to the site."
+        },
+        {
+        id: "textElement6",
+        es: "05/Julio/2023: Reemplazé el Guestbook original de Firebase (RIP por alguna razón) por 123Guestbook.com.",
+        en: "July 5, 2023: I replaced the original Firebase Guestbook (RIP for some reason) with 123Guestbook.com."
+        },
+        {
+        id: "textElement7",
+        es: "Nombre:",
+        en: "Name:"
+        },
+        {
+        id: "textElement8",
+        es: "Actualmente:",
+        en: "Currently:"
+        },
+        {
+        id: "textElement9",
+        es: "Programando... Estudiando... Haciendo musica y glitches... :)",
+        en: "Programming... Studying... Making music and glitches... :)"
+        },
+        {
+        id: "textElement10",
+        es: "Jugando:",
+        en: "Playing:"
+        },
+        {
+        id: "textElement11",
+        es: "Eres el visitante número: <a href='http://stuff.mit.edu/doc/counter-howto.html'><img src='http://stuff.mit.edu/cgi/counter/zombot' alt='several'></a><br>desde que el contador se reinició. (21 de abril, 2023)",
+        en: "You are visitor number: <a href='http://stuff.mit.edu/doc/counter-howto.html'><img src='http://stuff.mit.edu/cgi/counter/zombot' alt='several'></a><br>since the counter reset. (April 21, 2023)"
+        },
+        {
+        id: "textElement12",
+        es: "Sitio hecho con ♥️ y Tailwind CSS",
+        en: "Website made with ♥️ and Tailwind CSS"
+        },
+        {
+        id: "textElement13",
+        es: "19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.",
+        en: "July 19, 2023: I added a button to change the language of the site and a 3D effect banner."
+        },
+        {
+        id: "textElement14",
+        es: "20/Julio/2023: Añadi un cursor personalizado.",
+        en: "July 20, 2023: I added a custom cursor."
+        }
+    ];
 
-    if (textElement.innerHTML === "Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre.") {
-      textElement.innerHTML = "Hello! Here you can find some of the music and glitch art I usually do in my free time.";
-    } else {
-      textElement.innerHTML = "Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre.";
-    }
-
-    if (textElement2.innerHTML === "Paginas Utiles") {
-      textElement2.innerHTML = "Useful Sites";
-    } else {
-      textElement2.innerHTML = "Paginas Utiles";
-    }
-
-    if (textElement3.innerHTML === "Galeria") {
-      textElement3.innerHTML = "Gallery";
-    } else {
-      textElement3.innerHTML = "Galeria";
-    }
-
-    if (textElement4.innerHTML === "Que hay de nuevo?") {
-      textElement4.innerHTML = "What's new?";
-    } else {
-      textElement4.innerHTML = "Que hay de nuevo?";
-    }
-
-    if (textElement5.innerHTML === "02/Julio/2023: Añadi una sección de Galeria al sitio.") {
-      textElement5.innerHTML = "July 2, 2023: I added a Gallery section to the site.";
-    }
-    else {
-        textElement5.innerHTML = "02/Julio/2023: Añadi una sección de Galeria al sitio.";
-    }
-
-    if (textElement6.innerHTML === "05/Julio/2023: Reemplazé el Guestbook original de Firebase (RIP por alguna razón) por 123Guestbook.com.") {
-      textElement6.innerHTML = "July 5, 2023: I replaced the original Firebase Guestbook (RIP for some reason) with 123Guestbook.com.";
-    }
-    else {
-        textElement6.innerHTML = "05/Julio/2023: Reemplazé el Guestbook original de Firebase (RIP por alguna razón) por 123Guestbook.com.";
-    }
-
-    if (textElement7.innerHTML === "Nombre:") {
-      textElement7.innerHTML = "Name:";
-    }
-    else {
-        textElement7.innerHTML = "Nombre:";
-    }
-
-    if (textElement8.innerHTML === "Actualmente:") {
-      textElement8.innerHTML = "Currently:";
-    }
-    else {
-        textElement8.innerHTML = "Actualmente:";
-    }
-
-    if (textElement9.innerHTML === "Programando... Estudiando... Haciendo musica y glitches... :)") {
-      textElement9.innerHTML = "Programming... Studying... Making music and glitches... :)";
-    }
-    else {
-        textElement9.innerHTML = "Programando... Estudiando... Haciendo musica y glitches... :)";
-    }
-
-    if (textElement10.innerHTML === "Jugando:") {
-      textElement10.innerHTML = "Playing:";
-    }
-    else {
-        textElement10.innerHTML = "Jugando:";
-    }
-
-    if (textElement13.innerHTML === "19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.") {
-      textElement13.innerHTML = "July 19, 2023: I added a button to change the language of the site and a 3D effect banner.";
-    }
-    else {
-        textElement13.innerHTML = "19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.";
-    }
-
-    // Spanish version of the text
-    var spanishText = 'Eres el visitante número: <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/zombot" alt="several"></a><br>desde que el contador se reinició. (21 de abril, 2023)';
-
-    // English version of the text
-    var englishText = 'You are visitor number: <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/zombot" alt="several"></a><br>since the counter reset. (April 21, 2023)';
-
-    // If the current text is in English, change it to Spanish
-    if (textElement11.innerHTML === englishText) {
-      textElement11.innerHTML = spanishText;
-    }
-    // Otherwise, change it to English
-    else {
-      textElement11.innerHTML = englishText;
-    }
-
-    if (textElement12.innerHTML === "Sitio hecho con ♥️ y Tailwind CSS") {
-      textElement12.innerHTML = "Website made with ♥️ and Tailwind CSS";
-    }
-    else {
-        textElement12.innerHTML = "Sitio hecho con ♥️ y Tailwind CSS";
-    }
+  for (var i = 0; i < translations.length; i++) {
+      var element = document.getElementById(translations[i].id);
+      if (element.textContent.trim() === translations[i].es.trim()) {
+          element.textContent = translations[i].en;
+      } else {
+          element.textContent = translations[i].es;
+      }
+  }
   });
 });
+
+
 

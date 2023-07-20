@@ -16,6 +16,9 @@
     <script src="./src/js/darkModeToggle.js"></script>
     <script src="./src/js/language.js"></script>
     <script src="./src/js/3d.js"></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script src="./src/js/cursor.js"></script>
+
 
 
 
@@ -52,7 +55,7 @@ href="https://webneko.net">Neko</a></h1>
 
 
 <div class="container flex mx-auto">
-    <div class="bg-gradient-to-t from-neutral-500 to-neutral-100 dark:bg-gradient-to-t dark:from-neutral-700 dark:to-neutral-900 mt-10" style="border-style: solid; border-width: thin">
+    <div class="bg-gradient-to-t bg-opacity-50 from-neutral-500 to-neutral-100 dark:bg-gradient-to-t dark:from-neutral-700 dark:to-neutral-900 mt-10" style="border-style: solid; border-width: thin">
             <div class="image3D-effect">
                 <a href="index.html"><img class="mx-auto" src="./src/img/logo3.png" alt=""></a>
             </div>
@@ -122,7 +125,9 @@ href="https://webneko.net">Neko</a></h1>
             <img src="src/img/gif/cute_036.gif" alt="Cute">
         </div>
         <br>
-        <p id="textElement" class="text-black dark:text-white">Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre.</p>
+        <p id="textElement" class="text-black dark:text-white">
+            Hola! Aquí podrás encontrar un poco de la música y glitch art que usualmente hago en mi tiempo libre. Por ahora no hay mucho, pero espero que te guste lo que hay, puedes navegar por los botones de arriba para ver más como mi galería o mis redes sociales, o paginas que encuentro utiles o entretenidas. Tambien puedes dejar un mensaje en mi guestbook si quieres, o si tienes alguna sugerencia o comentario puedes contactarme en mis redes sociales :).
+        </p>
         <br>
         <hr class="border-gray-300 dark:border-gray-600">
         <br>
@@ -144,6 +149,9 @@ href="https://webneko.net">Neko</a></h1>
                                     </div>
                                     <div class="container flex mx-auto place-content-center p-2">
                                         <p id="textElement13" class=" text-black dark:text-white border-dotted border-2 p-6 border-red-600 font-serif italic">19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.</p>
+                                    </div>
+                                    <div class="container flex mx-auto place-content-center p-2">
+                                        <p id="textElement14" class=" text-black dark:text-white border-dotted border-2 p-6 border-red-600 font-serif italic">20/Julio/2023: Añadi un cursor personalizado.</p>
                                     </div>
                                     <br>
                                 </div>
@@ -178,7 +186,7 @@ href="https://webneko.net">Neko</a></h1>
         <div class="flex flex-wrap justify-center">
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/19.gif">
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/anybrowser6.gif">
-            <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/beru.gif">
+            <a href="https://knockout.chat/"><img class="mx-2 my-1" style="width: 88px; height: 31px;" src="https://wishesforfishes.neocities.org/ko.gif"></a>
             <a href="https://z0mb0t.neocities.org/"><img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/delete-twitter.gif"></a>
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/desp-anim.gif">
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/beyes.gif">
@@ -191,11 +199,12 @@ href="https://webneko.net">Neko</a></h1>
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/ravenow3.gif">
             <img class="mx-2 my-1" style="width: 88px; height: 31px;" src="src/img/SIDE/sign_guest_book.gif">
             <a href="https://entranceorexit.net/" target="_blank"><img class="mx-2 my-1" style="width: 88px; height: 31px;" src="https://entranceorexit.net/img/eoe_button.2.png"></a>
-
         </div>
             <a href="https://www.imood.com/users/zombot" class="flex flex-wrap justify-center"><img src="https://moods.imood.com/display/uname-zombot/imood.gif" alt="The current mood of zombot at www.imood.com" border="0"></a>
             <br>
-            <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Karlos&dob=1686883401&gender=m&element=Fire&pet=https%3A%2F%2Fweb.archive.org%2Fweb%2F20091027115623%2Fhttp%3A%2F%2Fwww.geocities.com%2Fdraconisblkthn%2Farachnoskull.gif&map=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-000034430880-74c62f-t500x500.jpg&background=paper.jpg&tablecolor=%23ff486e&textcolor=%23bb344f" frameborder="0"></iframe>
+                <div class="relative aspect-w-1 aspect-h-1">
+                    <iframe class="absolute w-full h-full top-0 left-0" src="https://gifypet.neocities.org/pet/pet.html?name=Karlos&dob=1686883401&gender=m&element=Fire&pet=https%3A%2F%2Fweb.archive.org%2Fweb%2F20091027115623%2Fhttp%3A%2F%2Fwww.geocities.com%2Fdraconisblkthn%2Farachnoskull.gif&map=https%3A%2F%2Fi1.sndcdn.com%2Fartworks-000034430880-74c62f-t500x500.jpg&background=paper.jpg&tablecolor=%23ff486e&textcolor=%23bb344f" frameborder="0" scrolling="no"></iframe>
+                </div>
         </aside>
     </div>
 <!--Footer-->

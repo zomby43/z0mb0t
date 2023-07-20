@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+    ],
   content: [
     './**/*.{html,js}',
     './components/**/*.{html,js}',
