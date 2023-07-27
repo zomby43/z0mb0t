@@ -6,19 +6,19 @@ function getRandomInt(min, max) {
 
 function getRandomImage() {
   const images = [
-    "/z0mb0t/src/img/backg/1.png",
-    "/z0mb0t/src/img/backg/2.png",
-    "/z0mb0t/src/img/backg/3.png",
-    "/z0mb0t/src/img/backg/4.gif",
-    "/z0mb0t/src/img/backg/5.png",
-    "/z0mb0t/src/img/backg/6.png",
-    "/z0mb0t/src/img/backg/7.png",
-    "/z0mb0t/src/img/backg/8.png",
-    "/z0mb0t/src/img/backg/9.png",
-    "/z0mb0t/src/img/backg/10.png",
-    "/z0mb0t/src/img/backg/11.png",
-    "/z0mb0t/src/img/backg/12.png",
-    "/z0mb0t/src/img/backg/13.png",
+    "./src/img/backg/1.png",
+    "./src/img/backg/2.png",
+    "./src/img/backg/3.png",
+    "./src/img/backg/4.gif",
+    "./src/img/backg/5.png",
+    "./src/img/backg/6.png",
+    "./src/img/backg/7.png",
+    "./src/img/backg/8.png",
+    "./src/img/backg/9.png",
+    "./src/img/backg/10.png",
+    "./src/img/backg/11.png",
+    "./src/img/backg/12.png",
+    "./src/img/backg/13.png",
   ];
   return images[getRandomInt(0, images.length - 1)];
 }
