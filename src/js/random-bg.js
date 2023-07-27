@@ -19,6 +19,10 @@ function getRandomImage() {
     "./src/img/backg/11.png",
     "./src/img/backg/12.png",
     "./src/img/backg/13.png",
+    "./src/img/backg/14.png",
+    "./src/img/backg/15.png",
+    "./src/img/backg/16.png",
+    "./src/img/backg/17.png",
   ];
   return images[getRandomInt(0, images.length - 1)];
 }

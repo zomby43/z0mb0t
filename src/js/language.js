@@ -52,9 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
         en: "Playing:"
         },
         {
-        id: "textElement11",
-        es: "Eres el visitante número: <a href='http://stuff.mit.edu/doc/counter-howto.html'><img src='http://stuff.mit.edu/cgi/counter/zombot' alt='several'></a><br>desde que el contador se reinició. (21 de abril, 2023)",
-        en: "You are visitor number: <a href='http://stuff.mit.edu/doc/counter-howto.html'><img src='http://stuff.mit.edu/cgi/counter/zombot' alt='several'></a><br>since the counter reset. (April 21, 2023)"
+            id: "textElement11a",
+            es: "Eres el visitante número:",
+            en: "You are visitor number:"
+        },
+        {
+            id: "textElement11b",
+            html: "<a href='http://stuff.mit.edu/doc/counter-howto.html'><img src='http://stuff.mit.edu/cgi/counter/zombot' alt='several'></a>"
         },
         {
         id: "textElement12",
