@@ -2744,10 +2744,6 @@ video {
     }
   }
 
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -2798,10 +2794,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
