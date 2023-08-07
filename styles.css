@@ -49,8 +49,8 @@ li {
 
 .image3D-effect {
     perspective: 1000px;
-    width: 900px;
-    height: 250px;
+    max-width: 900px; /* Cambiado a max-width */
+    height: 200px;    /* Cambiado a auto */
     overflow: hidden;
     margin: 50px auto;
     position: relative;
@@ -58,7 +58,7 @@ li {
 
 .image3D-effect img {
     width: 100%;
-    height: 100%;
+    height: auto;    /* Cambiado a auto */
     transition: transform 0.1s;
     transform: rotateX(0) rotateY(0);
     position: absolute;
@@ -88,5 +88,17 @@ li {
     animation: circleMove 10s infinite;
 }
 
+/* Contenedor para los botones */
+.top-buttons-container {
+  position: relative; /* Asegura que los elementos absolutos dentro de este contenedor estén posicionados en relación con él */
+  z-index: 1000; /* Un valor alto de z-index para asegurarte de que aparezca encima de otros elementos */
+}
+
+/* Botones individuales */
+.top-buttons-container button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
 
 
