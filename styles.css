@@ -50,7 +50,7 @@ li {
 .image3D-effect {
     perspective: 1000px;
     max-width: 900px; /* Cambiado a max-width */
-    height: 200px;    /* Cambiado a auto */
+    height: 210px;    /* Cambiado a auto */
     overflow: hidden;
     margin: 50px auto;
     position: relative;
