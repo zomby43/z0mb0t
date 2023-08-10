@@ -22,16 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         en: "What's new?"
         },
         {
-        id: "textElement5",
-        es: "02/Julio/2023: Añadi una sección de Galeria al sitio.",
-        en: "July 2, 2023: I added a Gallery section to the site."
-        },
-        {
-        id: "textElement6",
-        es: "05/Julio/2023: Reemplazé el Guestbook original de Firebase (RIP por alguna razón) por 123Guestbook.com.",
-        en: "July 5, 2023: I replaced the original Firebase Guestbook (RIP for some reason) with 123Guestbook.com."
-        },
-        {
         id: "textElement7",
         es: "Nombre:",
         en: "Name:"
@@ -66,25 +56,21 @@ document.addEventListener("DOMContentLoaded", function() {
         en: "Website made with ♥️ and Tailwind CSS"
         },
         {
-        id: "textElement13",
-        es: "19/Julio/2023: Añadi un botón para cambiar el idioma del sitio y un banner con efecto 3D.",
-        en: "July 19, 2023: I added a button to change the language of the site and a 3D effect banner."
-        },
-        {
         id: "textElement14",
-        es: "20/Julio/2023: Añadi un cursor personalizado.",
-        en: "July 20, 2023: I added a custom cursor."
+        es: "09/Agosto/2023: Nuevo banner, cursor, guestbook, arte :).",
+        en: "09/August/2023: New banner, cursor, guestbook, art :)."
         }
     ];
-
-  for (var i = 0; i < translations.length; i++) {
-      var element = document.getElementById(translations[i].id);
-      if (element.textContent.trim() === translations[i].es.trim()) {
-          element.textContent = translations[i].en;
-      } else {
-          element.textContent = translations[i].es;
-      }
-  }
+    for (var i = 0; i < translations.length; i++) {
+        var element = document.getElementById(translations[i].id);
+        if (element && translations[i].es && translations[i].en) {
+            if (element.textContent.trim() === translations[i].es.trim()) {
+                element.textContent = translations[i].en;
+            } else {
+                element.textContent = translations[i].es;
+            }
+        }
+    }
   });
 });
 

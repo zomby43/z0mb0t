@@ -1,3 +1,3 @@
 window.addEventListener("load", (event) => {
-  new cursoreffects.ghostCursor();
+  new cursoreffects.bubbleCursor();
 });
