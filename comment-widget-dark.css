@@ -72,16 +72,16 @@
 	text-align: center;
     text-transform: uppercase;
     background-color: black;
-    color: #cc2e59;
+    color: #ff80bf;
     border: 1px solid white;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
     color: white;
-    border: 1px solid #cc2e59;
+    border: 1px solid #ff80bf;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: #ff3770;
+    color: #ff80bf;
     border: 1px solid white;
 }
 
@@ -101,7 +101,7 @@
     font-style: italic;
     font-weight: bold;
     text-align: right;
-    background-color: #cc2e59;
+    background-color: #ff80bf;
 }
 
 .c-inputWrapper {
@@ -111,10 +111,10 @@
 .c-input {
     padding: 4px;
     color: black;
-    border: 1px solid #cc2e59;
+    border: 1px solid #ff80bf;
 	outline: none;
 }
-.c-input:focus {border: 1px solid #cc2e59;}
+.c-input:focus {border: 1px solid #ff80bf;}
 
 .c-textInput {
     width: calc(100% - 10px);
@@ -137,7 +137,7 @@
     margin-bottom: 15px;
     padding: 10px;
     border: 2px solid white;
-    background-color: #cc2e59;
+    background-color: #ff80bf;
 }
 .c-reply {
     display: block;
@@ -147,7 +147,7 @@
     margin-right: 0;
     padding: 10px;
     border: 2px solid white;
-    background-color: #cc2e59;
+    background-color: #ff80bf;
 }
 .c-reply:last-child {margin-bottom: 0;}
 .c-replyContainer {
@@ -168,7 +168,7 @@
 .c-site {
     text-transform: uppercase;
     text-decoration: none;
-    color: #B766FF;
+    color: #9580ff;
 }
 .c-site:hover {color: white;}
 .c-timestamp {
