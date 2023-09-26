@@ -59,15 +59,48 @@ document.addEventListener("DOMContentLoaded", function() {
         id: "textElement14",
         es: "09/Agosto/2023: Nuevo banner, cursor, guestbook, arte :).",
         en: "09/August/2023: New banner, cursor, guestbook, art :)."
+        },
+        {
+        id: "textElement15",
+        es: "25/Septiembre/2023: Botón INPRNT, por si quieres pasarte por unos prints.",
+        en: "25/September/2023: INPRNT button, in case you want to stop by some prints."
+        },
+        {
+        id: "textElement16",
+        es: "Deja tus comentarios, dudas, reclamos, spam, ideas, criticas... aqui.",
+        en: "Leave your comments, questions, complaints, spam, ideas, criticisms... here."
+        },
+        {
+        id: "textElement17",
+        es: "Ir a Inicio",
+        en: "Go to Home"
+        },
+        {
+        id: "textElement18",
+        es: "Algunos sitios web que considero utiles o entretenidos/interesantes para visitar.",
+        en: "Some websites that I consider useful or entertaining/interesting to visit."
+        },
+        {
+        id: "languageImage",
+        es: "src/img/SIDE/about.png",
+        en: "src/img/SIDE/about2.png"
         }
     ];
     for (var i = 0; i < translations.length; i++) {
         var element = document.getElementById(translations[i].id);
         if (element && translations[i].es && translations[i].en) {
-            if (element.textContent.trim() === translations[i].es.trim()) {
-                element.textContent = translations[i].en;
-            } else {
-                element.textContent = translations[i].es;
+            if (element.tagName === 'IMG') { // Check if the element is an image
+                if (element.src.includes(translations[i].es)) {
+                    element.src = translations[i].en;
+                } else {
+                    element.src = translations[i].es;
+                }
+            } else { // If not an image, change text content
+                if (element.textContent.trim() === translations[i].es.trim()) {
+                    element.textContent = translations[i].en;
+                } else {
+                    element.textContent = translations[i].es;
+                }
             }
         }
     }

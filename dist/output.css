@@ -1985,14 +1985,14 @@ video {
   background-color: rgb(248 248 242 / var(--tw-bg-opacity));
 }
 
-.bg-\[rgb\(255\2c 0\2c 0\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#22212c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(34 33 44 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgb\(255\2c 0\2c 0\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t {
@@ -2680,19 +2680,14 @@ video {
   border-color: rgb(248 248 242 / var(--tw-border-opacity));
 }
 
-.dark .dark\:bg-\[\#22212c\] {
+.dark .dark\:bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(34 33 44 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-\[\#454158\] {
   --tw-bg-opacity: 1;
   background-color: rgb(69 65 88 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-\[\#80ffea\] {
@@ -2749,6 +2744,10 @@ video {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2797,6 +2796,10 @@ video {
 @media (min-width: 1280px) {
   .xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 }
 
