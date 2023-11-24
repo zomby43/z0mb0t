@@ -103,4 +103,69 @@ li {
   right: 2rem;
 }
 
+@media screen and (max-width: 640px) {
+  header {
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos */
+  }
+
+  nav li {
+    margin: 0.5em 0; /* Ajusta los márgenes para los elementos de la lista */
+  }
+
+  .image-container {
+    max-width: 100%; /* Asegúrate de que el contenedor de imágenes no desborde */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+  /* Oculta elementos decorativos que no se ajustan bien */
+  .decorative-border {
+    display: none;
+  }
+
+  /* Aumenta el tamaño de los botones y enlaces para pantallas táctiles */
+  button, a {
+    padding: 0.8em; /* Más espacio alrededor del texto */
+    font-size: 1em; /* Texto más grande para facilitar la lectura */
+  }
+
+  /* Ajustes adicionales que necesites */
+}
+
+/* Estilo base para el contenedor de navegación */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none; /* Elimina los estilos de lista predeterminados */
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+.navbar li {
+  margin: 5px; /* Añade un poco de margen alrededor de los elementos de la lista */
+  flex-basis: calc(100% / 8); /* Ajusta esta línea según la cantidad de elementos que quieras en una fila */
+}
+
+/* Estilo para dispositivos móviles usando media query */
+@media screen and (max-width: 640px) {
+  .navbar li {
+    flex-basis: 100%; /* Hace que cada elemento de la lista ocupe el ancho completo en dispositivos móviles */
+  }
+}
+
+/* Opcional: Estilos para un menú de hamburguesa */
+.hamburger-menu {
+  display: none; /* Oculta por defecto */
+}
+
+@media screen and (max-width: 640px) {
+  .hamburger-menu {
+    display: block; /* Muestra el botón de menú de hamburguesa en dispositivos móviles */
+  }
+}
 

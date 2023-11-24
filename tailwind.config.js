@@ -35,7 +35,7 @@ module.exports = {
         'image-16': "url('./src/img/backg/16.png')",
         'image-16': "url('./src/img/backg/17.png')",
       }),
-      // Define animation class
+      screens: { 'sm': { 'max': '1023px' } },
       animation: {
         'ltr-linear-infinite': 'move-bg 10s linear infinite',
       },
