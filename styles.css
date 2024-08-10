@@ -5,6 +5,29 @@
 	to { transform: rotate(1deg); }
 }
 
+.post .separator a {margin-left: auto !important; margin-right: auto !important;}
+.post img {
+  padding: 0;
+  border: 2px dotted;
+  border-color: #7bd877;
+  margin: 5px;
+  padding: 5px;
+}
+.post{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 5px dotted;
+  border-color: #7bd877;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.post h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
 .hotm {
 	animation-name: rotation;
 	animation-duration: 3s;
