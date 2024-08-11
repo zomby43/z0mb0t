@@ -5,6 +5,16 @@
 	to { transform: rotate(1deg); }
 }
 
+@layer base {
+  @font-face {
+    font-family: 'PC-9900';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./src/fonts/pc-9900-v2.ttf) format('woff2');
+  }
+}
+
 .post .separator a {margin-left: auto !important; margin-right: auto !important;}
 .post img {
   padding: 0;
@@ -23,9 +33,7 @@
 }
 
 .post h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
+  font-family: 'PC-9900';
 }
 
 .hotm {
